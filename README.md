@@ -6,10 +6,8 @@ BOSCH Python Repositories: https://anu9rng:AP6eY5xuhS1MqAdy5jedftw3ndQq7MHjXL8Rp
 BOSCH Angular NPM Repositories:https://rb-artifactory.bosch.com/artifactory/webapp/#/artifacts/browse/tree/General/bci-npm-virtual  
  
 ## Naive Bayesian Model
-Naive presents factors are independence for each other
-$$
-P(Y|X)=\frac{P(X|Y)*P(Y)}{P(X)}
-$$
+Naive presents factors are independence for each other  
+$$ P(Y|X)=\frac{P(X|Y)*P(Y)}{P(X)} $$
 where Y represents labels, X represents factor.
 $$
 \begin{equation*}%加*表示不对公式编号

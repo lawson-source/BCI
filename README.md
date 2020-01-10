@@ -51,8 +51,10 @@ User-defined: binary_crossentropy (unbalanced data)
 
 the loss function increase weight of less sample to the gradient of loss function incline less sample under the situation of unbalanced samples between positive and negative.   
 
+```
 def loss(y_true,y_pred):
-    return K.mean(((y_true-1)*K.log(1-y_pred+K.epsilon())-y_true*500*K.log(y_pred+K.epsilon())),axis=-1)
+   return K.mean(((y_true-1)*K.log(1-y_pred+K.epsilon())-y_true*500*K.log(y_pred+K.epsilon())),axis=-1)
+```
 optimizer:
 adam
 

@@ -1,11 +1,11 @@
 # BCI
 code in BCI
-##Repositories URL 
+## Repositories URL 
 BOSCH Python Repositories: https://anu9rng:AP6eY5xuhS1MqAdy5jedftw3ndQq7MHjXL8Rpb@rb-artifactory.bosch.com/artifactory/api/pypi/python-virtual/simple/  
 
 BOSCH Angular NPM Repositories:https://rb-artifactory.bosch.com/artifactory/webapp/#/artifacts/browse/tree/General/bci-npm-virtual  
  
-##Naive Bayesian Model
+## Naive Bayesian Model
 Naive presents factors are independence for each other
 
 P(Y|X)=P(X|Y)∗P(Y)P(X)

@@ -7,18 +7,24 @@ BOSCH Angular NPM Repositories:https://rb-artifactory.bosch.com/artifactory/weba
  
 ## Naive Bayesian Model
 Naive presents factors are independence for each other
-
-P(Y|X)=P(X|Y)∗P(Y)P(X)
-
+$$
+P(Y|X)=\frac{P(X|Y)*P(Y)}{P(X)}
+$$
 where Y represents labels, X represents factor.
-
-P(Y|X1,X2,...,Xn)=P(X1,X2,...,Xn|Y)∗P(Y)P(X1,X2,...,Xn)=P(X1|Y)∗P(X2|Y)∗...∗P(Xn|Y)∗P(Y)P(X1)∗P(X2)∗...∗P(Xn)
-
+$$
+\begin{equation*}%加*表示不对公式编号
+\begin{split}
+P(Y|X_1,X_2,...,X_n)&=\frac{P(X_1,X_2,...,X_n|Y)*P(Y)}{P(X_1,X_2,...,X_n)}
+\\&=\frac{P(X_1|Y)*P(X_2|Y)*...*P(X_n|Y)*P(Y)}{P(X_1)*P(X_2)*...*P(X_n)}
+\end{split}
+\end{equation*}
+$$
 where X1, X2, ... , Xn represent varies of factors values.
-
+$$
+P(Y_1)=\frac{P(Y_1|X_1,X_2,...,X_n)}{P(Y_1|X_1,X_2,...,X_n)+P(Y_0|X_1,X_2,...,X_n)}
+$$
 the probability of prediction:
 
-P(Y1)=P(Y1|X1,X2,...,Xn)P(Y1|X1,X2,...,Xn)+P(Y0|X1,X2,...,Xn)
 
 or
 

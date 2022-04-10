@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
+	<ClientInitialization>
+		<UseStartBeforeLogon UserControllable="false">false</UseStartBeforeLogon>
+		<AutomaticCertSelection UserControllable="false">true</AutomaticCertSelection>
+		<ShowPreConnectMessage>false</ShowPreConnectMessage>
+		<CertificateStore>Machine</CertificateStore>
+		<CertificateStoreMac>System</CertificateStoreMac>
+		<CertificateStoreOverride>true</CertificateStoreOverride>
+		<ProxySettings>IgnoreProxy</ProxySettings>
+		<AllowLocalProxyConnections>false</AllowLocalProxyConnections>
+		<AuthenticationTimeout>30</AuthenticationTimeout>
+		<AutoConnectOnStart UserControllable="false">false</AutoConnectOnStart>
+		<MinimizeOnConnect UserControllable="true">true</MinimizeOnConnect>
+		<LocalLanAccess UserControllable="false">false</LocalLanAccess>
+		<IPProtocolSupport>IPv6,IPv4</IPProtocolSupport>
+        <AutoReconnect UserControllable="true">true
+            <AutoReconnectBehavior>DisconnectOnSuspend</AutoReconnectBehavior>
+        </AutoReconnect>
+		<AutoUpdate UserControllable="false">false</AutoUpdate>
+		<RSASecurIDIntegration UserControllable="false">HardwareToken</RSASecurIDIntegration>
+		<WindowsLogonEnforcement>SingleLocalLogon</WindowsLogonEnforcement>
+		<LinuxLogonEnforcement>SingleLocalLogon</LinuxLogonEnforcement>
+		<WindowsVPNEstablishment>AllowRemoteUsers</WindowsVPNEstablishment>
+		<LinuxVPNEstablishment>AllowRemoteUsers</LinuxVPNEstablishment>
+		<AutomaticVPNPolicy>false</AutomaticVPNPolicy>
+		<CertificateMatch>
+			<MatchOnlyCertsWithKU>false</MatchOnlyCertsWithKU>
+			<DistinguishedName>
+				<DistinguishedNameDefinition Operator="Equal" Wildcard="Enabled" MatchCase="Enabled">
+					<Name>ISSUER-CN</Name>
+					<Pattern>RB-CA6-DE</Pattern>
+				</DistinguishedNameDefinition>
+			</DistinguishedName>
+		</CertificateMatch>
+		<EnableAutomaticServerSelection UserControllable="false">false
+			<AutoServerSelectionImprovement>20</AutoServerSelectionImprovement>
+			<AutoServerSelectionSuspendTime>4</AutoServerSelectionSuspendTime>
+		</EnableAutomaticServerSelection>
+        <RetainVpnOnLogoff>false
+            <UserEnforcement>SameUserOnly</UserEnforcement>
+        </RetainVpnOnLogoff>
+		<AllowManualHostInput>true</AllowManualHostInput>
+	</ClientInitialization>
+	<ServerList>
+		<HostEntry>
+			<HostName>IntRAS-Lite EMEA Germany</HostName>
+			<HostAddress>rasvpn-ihc-emea.bosch.com</HostAddress>
+		</HostEntry>
+	</ServerList>
+</AnyConnectProfile>
